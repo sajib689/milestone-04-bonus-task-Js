@@ -24,7 +24,7 @@ const products = [
 function matchProducts (products, search) {
     const matched = []
     for(product of products) {
-        if(product.name.toLowerCase().includes(search)){
+        if(product.name.toLowerCase().includes(search.toLowerCase())){
             matched.push(product)
         }
     }
